@@ -1,4 +1,4 @@
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/crew_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/crew/crew_{{ version }}.tar.gz
-  sha256: 48bd912f3615749af1c886a8169a0373caff79666e4498f9dd9aedee4a7356a8
+  sha256: 021fba0637798f29e335a2135830a49ede5251f11b407d3fdaa098bbb7fd41cb
 
 build:
   merge_build_host: true  # [win]
