@@ -23,14 +23,13 @@ requirements:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base
+    - r-base >= 4.0
     - r-r6
     - r-cli >=3.1.0
     - r-data.table
-    - r-getip
     - r-later
-    - r-mirai >=0.12.0
-    - r-nanonext >=0.12.0
+    - r-mirai >=2.4.0
+    - r-nanonext >=1.6.1
     - r-processx
     - r-promises
     - r-ps
@@ -42,10 +41,9 @@ requirements:
     - r-r6
     - r-cli >=3.1.0
     - r-data.table
-    - r-getip
     - r-later
-    - r-mirai >=0.12.0
-    - r-nanonext >=0.12.0
+    - r-mirai >=2.4.0
+    - r-nanonext >=1.6.1
     - r-processx
     - r-promises
     - r-ps
