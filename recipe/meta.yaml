@@ -12,7 +12,7 @@ source:
   sha256: 4852e718db227cc5c6befa381094d2fc2172eb67696c8ce242098a49a9175f0c
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -23,13 +23,13 @@ requirements:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base >=4.0
+    - r-base
     - r-r6
     - r-cli >=3.1.0
     - r-data.table
     - r-later
-    - r-mirai >=2.4.0
-    - r-nanonext >=1.6.1
+    - r-mirai >=2.0.1
+    - r-nanonext >=1.6.0
     - r-processx
     - r-promises
     - r-ps
@@ -37,13 +37,13 @@ requirements:
     - r-tibble
     - r-tidyselect
   run:
-    - r-base >=4.0
+    - r-base
     - r-r6
     - r-cli >=3.1.0
     - r-data.table
     - r-later
-    - r-mirai >=2.4.0
-    - r-nanonext >=1.6.1
+    - r-mirai >=2.0.1
+    - r-nanonext >=1.6.0
     - r-processx
     - r-promises
     - r-ps
