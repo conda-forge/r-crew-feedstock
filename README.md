@@ -148,6 +148,3 @@ Feedstock Maintainers
 * [@brendanf](https://github.com/brendanf/)
 * [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 
-
-<!-- dummy commit to enable rerendering -->
-
