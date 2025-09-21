@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/crew_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/crew/crew_{{ version }}.tar.gz
-  sha256: 4852e718db227cc5c6befa381094d2fc2172eb67696c8ce242098a49a9175f0c
+  sha256: d229c15d1d4535dc3b2884acf2bb55d6c6b5315ec2e272055feab5e84519ce49
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
