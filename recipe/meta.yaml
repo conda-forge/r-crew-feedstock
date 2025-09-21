@@ -17,6 +17,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -26,10 +30,11 @@ requirements:
     - r-base
     - r-r6
     - r-cli >=3.1.0
+    - r-collections >=0.3.9
     - r-data.table
     - r-later
-    - r-mirai >=2.0.1
-    - r-nanonext >=1.6.0
+    - r-mirai >=2.5.0
+    - r-nanonext >=1.7.0
     - r-processx
     - r-promises
     - r-ps
@@ -40,10 +45,11 @@ requirements:
     - r-base
     - r-r6
     - r-cli >=3.1.0
+    - r-collections >=0.3.9
     - r-data.table
     - r-later
-    - r-mirai >=2.0.1
-    - r-nanonext >=1.6.0
+    - r-mirai >=2.5.0
+    - r-nanonext >=1.7.0
     - r-processx
     - r-promises
     - r-ps
